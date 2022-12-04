@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+	
+	
+	">
+	<bean id="a" class="com.my.vo.A">
+		<!-- <property name="num" value="99"></property> -->
+		<constructor-arg value="99"></constructor-arg>
+	</bean>
+	
+	<bean id="productRepository" class="com.my.repository.ProductRepositoryOracle"></bean>
+	<bean id="productService" class="com.my.service.ProductService">
+		<constructor-arg ref="productRepository"></constructor-arg>
+   <!-- <property name="repository" ref="productRepository"></property> -->
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+		<property name="username" value="hr"></property>
+		<property name="password" value="hr"></property>	
+	</bean>
+	
+		<bean id="productRepository2" class="com.my.repository.ProductRepositoryOracle2">
+		<property name="ds" ref="dataSource"></property>
+		</bean>
+
+	
+</beans>
