@@ -8,13 +8,18 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import com.my.exception.FindException;
 import com.my.sql.MyConnection;
 import com.my.vo.Product;
 
+@Repository("ProductRepository2")
 public class ProductRepositoryOracle2 implements ProductRepository {
+	
+	@Autowired
 	private DataSource ds;
-
 	public DataSource getDs() {
 		return ds;
 	}

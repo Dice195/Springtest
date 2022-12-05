@@ -44,8 +44,7 @@ public class ContainerTest {
 			}
 			
 			
-			System.out.println("productRepository2의 (DataSource사용 스프링빈 테스트");
-			
+			System.out.println("productRepository2의 (DataSource사용");
 			ProductRepository repository2 = ctx.getBean("productRepository2", ProductRepository.class);
 			
 			try {
