@@ -14,8 +14,6 @@ public interface ProductRepository {
 	 * @throws FindException
 	 */
 	int selectCount() throws FindException;
-		
-
 	
 	/**
 	 * @상품 전체 검색한다.
