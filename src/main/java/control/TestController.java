@@ -85,14 +85,13 @@ public class TestController {
 		return list;
 		
 	}
-	
 	@GetMapping("g")
 	public ResponseEntity<String>  g() {
 //		return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		ResponseEntity<String> re = new ResponseEntity<String>(
 				"이미 존재하는 아이디입니다.",HttpStatus.INTERNAL_SERVER_ERROR);
 		return re;
-		//응답코드를 조작 한다.aaa
+		//응답코드를 조작 한다.	aaaa
 	}
 	
 
