@@ -29,6 +29,36 @@
     <artifactId>spring-jdbc</artifactId>
     <version>5.2.22.RELEASE</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+<dependency>
+    <groupId>com.zaxxer</groupId>
+    <artifactId>HikariCP</artifactId>
+    <version>5.0.1</version>
+</dependency>
+<!-- Logging -->
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+	<version>1.6.6</version>
+</dependency>
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>jcl-over-slf4j</artifactId>
+	<version>1.6.6</version>
+	<!-- <scope>runtime</scope> -->
+</dependency>
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-log4j12</artifactId>
+	<version>1.6.6</version>
+	<!-- <scope>runtime</scope> -->
+</dependency>
+<!-- SQL구문이 log로 출력 : DriverSpy -->
+  <dependency>
+   <groupId>org.bgee.log4jdbc-log4j2</groupId>
+   <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+   <version>1.16</version>
+  </dependency>
 
   </dependencies>
 </project>
