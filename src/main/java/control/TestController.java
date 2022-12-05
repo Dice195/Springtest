@@ -92,7 +92,7 @@ public class TestController {
 		ResponseEntity<String> re = new ResponseEntity<String>(
 				"이미 존재하는 아이디입니다.",HttpStatus.INTERNAL_SERVER_ERROR);
 		return re;
-		//응답코드를 조작 한다.
+		//응답코드를 조작 한다.aaa
 	}
 	
 
