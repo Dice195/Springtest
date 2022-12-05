@@ -85,7 +85,6 @@ public class TestController {
 		return list;
 		
 	}
-	
 	@GetMapping("g")
 	public ResponseEntity<String>  g() {
 //		return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
