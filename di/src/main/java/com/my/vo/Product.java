@@ -14,6 +14,9 @@ public class Product {
 		private String prodName;
 		private int prodPrice;
 		private String prodInfo;
+		public Product(String prodNo2, String prodName2, int prodPridce, String prodInfo2) {
+			// TODO Auto-generated constructor stub
+		}
 		@Override
 		public String toString() {
 			return "Product [prodNo=" + prodNo + ", prodName=" + prodName + ", prodPrice=" + prodPrice + ", prodInfo="

@@ -2,8 +2,6 @@ package com.my.dto;
 
 import java.util.List;
 
-import com.my.vo.Product;
-
 public class PageBean<T> {
 	private int currentPage;//현재페이지
 	public static final int CNT_PER_PAGE = 4; //페이지당 보여줄 상품수
