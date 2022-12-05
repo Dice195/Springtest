@@ -15,7 +15,7 @@ import com.my.exception.FindException;
 import com.my.sql.MyConnection;
 import com.my.vo.Product;
 
-@Repository("ProductRepository2")
+@Repository("productRepository2")
 public class ProductRepositoryOracle2 implements ProductRepository {
 	
 	@Autowired

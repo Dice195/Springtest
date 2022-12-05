@@ -29,5 +29,9 @@
 		<property name="ds" ref="dataSource"></property>
 		</bean>
 
-	
+<!-- 	<bean id="customerRepository" class="com.my.repository.CustomerRepositoryOracle"></bean>
+	<bean id="customerService" class="com.my.service.CustomerService">
+		<constructor-arg ref="customerRepository"></constructor-arg>
+		<property name="ds" ref="dataSoruce"></property>
+	</bean> -->
 </beans>
