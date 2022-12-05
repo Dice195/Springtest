@@ -84,6 +84,7 @@ public class TestController {
 		list.add(new Customer("id3", "p3", "김태현"));
 		return list;
 		
+		
 	}
 	@GetMapping("g")
 	public ResponseEntity<String>  g() {
